@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami | Najwa's Herbarium</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logoApotek.png" alt="Logo Najwa's Herbarium" class="brand-logo-img me-2">
+
+                <span class="brand-text text-success fw-bold d-flex flex-column lh-1">
+                    <span class="fs-6">Najwa's</span>
+                    <span class="fs-6 fw-normal" style="margin-top: -3px;">Herbarium</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link " href="produk.html">Produk & Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link " href="tentang.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link " href="blog.html">Blog/Edukasi</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+                </ul>
+                <button class="btn btn-outline-success ms-lg-3 me-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i> <span class="d-none d-md-inline">Cari</span>
+                </button>
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#keranjangOffcanvas" aria-controls="keranjangOffcanvas">
+                    🛒 Keranjang
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success fw-bold display-5">Mari Terhubung dengan Kami</h2>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 border rounded shadow-sm bg-white">
+                        <h3 class="mb-3 text-success"><i class="fas fa-envelope-open-text me-2"></i> Kirim Pesan Cepat
+                        </h3>
+                        <p class="lead small text-muted">Kami akan merespons pertanyaan Anda dalam waktu 1x24 jam kerja.
+                        </p>
+
+                        <form action="https://formsubmit.co/info@najwasherbarium.com" method="POST">
+                            <input type="hidden" name="_subject"
+                                value="Pesan Kontak Baru dari Website Najwa's Herbarium">
+                            <input type="hidden" name="_next" value="https://najwasherbarium.com/terimakasih.html">
+                            <input type="hidden" name="_honeypot" value="email_address">
+
+                            <div class="mb-3">
+                                <label for="namaLengkap" class="form-label fw-bold">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="namaLengkap" name="Nama" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="emailKontak" class="form-label fw-bold">Alamat Email Aktif</label>
+                                <input type="email" class="form-control" id="emailKontak" name="Email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subjek" class="form-label fw-bold">Subjek (Contoh: Pertanyaan
+                                    Produk)</label>
+                                <input type="text" class="form-control" id="subjek" name="Subjek" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="pesanKontak" class="form-label fw-bold">Isi Pesan / Pertanyaan
+                                    Detail</label>
+                                <textarea class="form-control" id="pesanKontak" name="Pesan" rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-success btn-lg w-100 mt-2"><i
+                                    class="fas fa-paper-plane me-2"></i> Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h3 class="mb-3 text-success"><i class="fas fa-info-circle me-2"></i> Informasi Apotek Fisik</h3>
+                    <ul class="list-unstyled fs-6">
+                        <li class="mb-3"><strong><i class="fas fa-phone-alt me-2 text-success"></i> Telepon:</strong>
+                            +62 812-3456-7890 (Layanan Konsultasi)</li>
+                        <li class="mb-3"><strong><i class="fas fa-envelope me-2 text-success"></i> Email:</strong>
+                            info@najwasherbarium.com</li>
+                        <li class="mb-3"><strong><i class="fas fa-map-marker-alt me-2 text-success"></i> Alamat
+                                Fisik:</strong> Jl. Kesehatan No. 45, Komplek Ruko Sehat, Jakarta Selatan.</li>
+                        <li class="mb-3"><strong><i class="fas fa-clock me-2 text-success"></i> Jam Buka:</strong> Senin
+                            - Sabtu (09:00 - 20:00 WIB)</li>
+                    </ul>
+
+                    <h4 class="mt-4 text-success">Lokasi Kami</h4>
+                    <div class="ratio ratio-16x9 border rounded shadow-sm">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.368623696773!2d106.8185593!3d-6.2087635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945c7e0c5%3A0x6b6e4e8e4a9e5a1b!2sJakarta!5e0!3m2!1sid!2sid!4v1700460000000!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Apotek Najwa</h6>
+                    <p class="small">Dedikasi kami untuk kesehatan alami dan warisan botani Indonesia. Kami percaya pada
+                        kekuatan penyembuhan alam.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Layanan Cepat</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none">Beranda</a></li>
+                        <li><a href="produk.html" class="text-decoration-none">Katalog Produk</a></li>
+                        <li><a href="#" class="text-decoration-none">Keranjang</a></li>
+                        <li><a href="tentang.html" class="text-decoration-none">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Hubungi Kami</h6>
+                    <p class="small">
+                        Email: info@najwasherbarium.com<br>
+                        Telepon: (021) 876-APOTK
+                    </p>
+                    <div class="d-flex social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Disclaimer</h6>
+                    <p class="small">Produk herbal adalah suplemen. Konsultasikan dengan profesional kesehatan sebelum
+                        mengganti resep medis. Hasil dapat bervariasi.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto" style="width: 90%;" />
+        <div class="text-center p-3 small">
+            © 2025 Najwa's Herbarium. Dibuat dengan semangat botani.
+        </div>
+    </footer>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-body p-5">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <h3 class="text-success fw-bold text-center mb-4">Cari Obat & Herbal Anda</h3>
+
+                    <form action="produk.html" method="GET">
+                        <div class="input-group input-group-lg border rounded-pill shadow-sm p-1"
+                            style="border-color: #1F7A8C !important;">
+                            <span class="input-group-text bg-white border-0 rounded-start-pill" id="search-addon"><i
+                                    class="fas fa-search text-success fa-lg"></i></span>
+                            <input type="search" class="form-control border-0"
+                                placeholder="Contoh: Kapsul Daun Kelor atau ketik gejala Anda..." aria-label="Search"
+                                name="q" aria-describedby="search-addon">
+                            <button class="btn btn-success rounded-pill px-4 ms-2" type="submit">Cari</button>
+                        </div>
+                    </form>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6 offset-md-3">
+                            <div class="p-3 text-center bg-light rounded-3 border">
+                                <i class="fas fa-magic text-success fa-2x mb-2"></i>
+                                <p class="mb-0 fw-bold text-success">Lupa nama obatnya apa? Coba ketik gejala kamu, kami
+                                    bantu carikan!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="keranjangOffcanvas"
+        aria-labelledby="keranjangOffcanvasLabel">
+        <div class="offcanvas-header bg-success text-white">
+            <h5 class="offcanvas-title" id="keranjangOffcanvasLabel">🛒 Keranjang Belanja Anda</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <h6 class="fw-bold mb-3 text-success">Produk Saat Ini (0 Item)</h6>
+            <div class="text-center p-4 border rounded mb-3">
+                <i class="fas fa-shopping-basket fa-2x text-muted mb-2"></i>
+                <p class="text-muted small mb-0">Keranjang Anda kosong. Yuk, temukan herbal terbaik!</p>
+            </div>
+
+            <div class="mt-auto pt-3 border-top">
+                <h5 class="fw-bold text-dark">Subtotal: Rp 0</h5>
+                <a href="produk.html" class="btn btn-success w-100 mt-2">Lanjutkan Belanja</a>
+                <button class="btn btn-outline-success w-100 mt-2 disabled" disabled>Bayar Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

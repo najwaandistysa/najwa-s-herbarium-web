@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk | Teh Jahe Hangat dan Rempah</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logoApotek.png" alt="Logo Najwa's Herbarium" class="brand-logo-img me-2">
+
+                <span class="brand-text text-success fw-bold d-flex flex-column lh-1">
+                    <span class="fs-6">Najwa's</span>
+                    <span class="fs-6 fw-normal" style="margin-top: -3px;">Herbarium</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="produk.html">Produk & Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link " href="tentang.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link " href="blog.html">Blog/Edukasi</a></li>
+                    <li class="nav-item"><a class="nav-link " href="kontak.html">Kontak</a></li>
+                </ul>
+                <button class="btn btn-outline-success ms-lg-3 me-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i> <span class="d-none d-md-inline">Cari</span>
+                </button>
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#keranjangOffcanvas" aria-controls="keranjangOffcanvas">
+                    🛒 Keranjang
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="text-success text-decoration-none">Beranda</a>
+                </li>
+                <li class="breadcrumb-item"><a href="produk.html" class="text-success text-decoration-none">Produk</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Teh Jahe Hangat</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 mb-4">
+                    <div class="shadow-lg p-2 rounded bg-white">
+
+                        <div id="productCarouselTehJahe" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval="false">
+                            <div class="carousel-inner ratio ratio-4x3 mb-3">
+
+                                <div class="carousel-item active">
+                                    <img src="assets/img/tehJahe.jpg" class="d-block w-100 rounded" alt="Teh Jahe Utama"
+                                        style="object-fit: cover;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+
+                            <img src="assets/img/tehJahe.jpg" class="img-thumbnail me-2 active-thumb"
+                                data-bs-target="#productCarouselTehJahe" data-bs-slide-to="0" alt="Thumbnail 1"
+                                style="width: 15%; cursor: pointer;">
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder text-success">Teh Jahe Hangat & Rempah Pilihan 🍵</h1>
+                    <span class="badge bg-warning fs-6 mb-3 text-dark">BEST SELLER</span>
+
+                    <p class="fs-1 fw-bold text-success">Rp 29.000,-</p>
+                    <p class="text-muted small">Harga untuk 1 kotak isi 10 sachet.</p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <span class="text-warning fs-5 me-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="text-success fw-bold me-3">4.8 / 5.0</span>
+                        <span class="text-muted">(450 Ulasan Pembeli)</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="kuantitas" class="form-label fw-bold text-success">Kuantitas:</label>
+                        <input type="number" id="kuantitas" class="form-control d-inline-block w-auto" value="3"
+                            min="1">
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-block mb-5">
+                        <button class="btn btn-success btn-lg shadow-sm" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#keranjangOffcanvas" aria-controls="keranjangOffcanvas">
+                            <i class="fas fa-shopping-cart me-2"></i> Tambah ke Keranjang
+                        </button>
+                        <button class="btn btn-warning btn-lg shadow-sm text-dark fw-bold" type="button">Beli
+                            Sekarang</button>
+                    </div>
+
+                    <div class="p-4 rounded border border-success">
+                        <h4 class="text-success mb-3"><i class="fas fa-hot-tub me-2"></i> Khasiat Menghangatkan</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Meredakan Mual dan
+                                Perut Kembung.</li>
+                            <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Menghangatkan Tubuh
+                                saat Musim Hujan.</li>
+                            <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Mengandung Jahe,
+                                Sereh, dan Madu.</li>
+                            <li class="mb-2"><i class="fas fa-check-circle me-2 text-success"></i> Praktis, Tinggal
+                                Seduh.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-success" id="deskripsi-tab-jahe" data-bs-toggle="tab"
+                                data-bs-target="#deskripsi-jahe" type="button" role="tab" aria-controls="deskripsi-jahe"
+                                aria-selected="true">Deskripsi Lengkap</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-success" id="ulasan-tab-jahe" data-bs-toggle="tab"
+                                data-bs-target="#ulasan-jahe" type="button" role="tab" aria-controls="ulasan-jahe"
+                                aria-selected="false">Ulasan & Rating (450)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-success" id="penggunaan-tab-jahe" data-bs-toggle="tab"
+                                data-bs-target="#penggunaan-jahe" type="button" role="tab"
+                                aria-controls="penggunaan-jahe" aria-selected="false">Cara Pakai</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-4 border border-top-0 rounded-bottom bg-white shadow-sm"
+                        id="myTabContent">
+
+                        <div class="tab-pane fade show active" id="deskripsi-jahe" role="tabpanel"
+                            aria-labelledby="deskripsi-tab-jahe">
+                            <h4 class="text-success">Hangatnya Rempah Pilihan</h4>
+                            <p>Teh Jahe Hangat Najwa diracik dari jahe merah pilihan, sereh, dan sedikit gula batu.
+                                Ideal untuk menghangatkan tenggorokan, mengatasi masuk angin, dan melancarkan
+                                pencernaan.</p>
+                            <p class="fw-bold">Komposisi: Ekstrak Jahe Merah, Sereh, Gula Batu, Madu Bubuk.</p>
+                            <p class="small text-muted">No. PIRT: 5093578010012-25</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="ulasan-jahe" role="tabpanel" aria-labelledby="ulasan-tab-jahe">
+                            <h4 class="text-success mb-3">Rangkuman Ulasan Pembeli</h4>
+                            <div class="border-bottom pb-2 mb-3">
+                                <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span>
+                                <p class="mb-1 fw-bold">Rina A. - Rasa Autentik</p>
+                                <p class="small">Jahenya kuat, cocok buat musim hujan. Bikin badan langsung hangat.
+                                    Packing aman dan cepat sampai!</p>
+                            </div>
+                            <div class="border-bottom pb-2 mb-3">
+                                <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                                <p class="mb-1 fw-bold">Hadi M. - Langganan</p>
+                                <p class="small">Selalu stok di rumah. Kualitas jahe terbaik dan tidak terlalu manis.
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-success mt-3">Lihat Semua Ulasan</button>
+                        </div>
+
+                        <div class="tab-pane fade" id="penggunaan-jahe" role="tabpanel"
+                            aria-labelledby="penggunaan-tab-jahe">
+                            <h4 class="text-success">Cara Penyajian</h4>
+                            <ol>
+                                <li>Tuangkan 1 sachet Teh Jahe ke dalam cangkir.</li>
+                                <li>Tambahkan 150ml air panas.</li>
+                                <li>Aduk hingga larut dan siap dinikmati.</li>
+                            </ol>
+                            <p class="small text-info fw-bold">Tips: Dapat ditambahkan sedikit perasan lemon untuk rasa
+                                yang lebih segar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Apotek Najwa</h6>
+                    <p class="small">Dedikasi kami untuk kesehatan alami dan warisan botani Indonesia. Kami percaya pada
+                        kekuatan penyembuhan alam.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Layanan Cepat</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none">Beranda</a></li>
+                        <li><a href="produk.html" class="text-decoration-none">Katalog Produk</a></li>
+                        <li><a href="#" class="text-decoration-none">Keranjang</a></li>
+                        <li><a href="tentang.html" class="text-decoration-none">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Hubungi Kami</h6>
+                    <p class="small">
+                        Email: info@najwasherbarium.com<br>
+                        Telepon: (021) 876-APOTK
+                    </p>
+                    <div class="d-flex social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Disclaimer</h6>
+                    <p class="small">Produk herbal adalah suplemen. Konsultasikan dengan profesional kesehatan sebelum
+                        mengganti resep medis. Hasil dapat bervariasi.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto" style="width: 90%;" />
+        <div class="text-center p-3 small">
+            © 2025 Najwa's Herbarium. Dibuat dengan semangat botani.
+        </div>
+    </footer>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-body p-5">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <h3 class="text-success fw-bold text-center mb-4">Cari Obat & Herbal Anda</h3>
+                    <form action="produk.html" method="GET">
+                        <div class="input-group input-group-lg border rounded-pill shadow-sm p-1"
+                            style="border-color: #1F7A8C !important;">
+                            <span class="input-group-text bg-white border-0 rounded-start-pill" id="search-addon"><i
+                                    class="fas fa-search text-success fa-lg"></i></span>
+                            <input type="search" class="form-control border-0"
+                                placeholder="Contoh: Kapsul Daun Kelor atau ketik gejala Anda..." aria-label="Search"
+                                name="q" aria-describedby="search-addon">
+                            <button class="btn btn-success rounded-pill px-4 ms-2" type="submit">Cari</button>
+                        </div>
+                    </form>
+                    <div class="row mt-4">
+                        <div class="col-md-6 offset-md-3">
+                            <div class="p-3 text-center bg-light rounded-3 border">
+                                <i class="fas fa-magic text-success fa-2x mb-2"></i>
+                                <p class="mb-0 fw-bold text-success">Lupa nama obatnya apa? Coba ketik gejala kamu, kami
+                                    bantu carikan!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="keranjangOffcanvas"
+        aria-labelledby="keranjangOffcanvasLabel">
+        <div class="offcanvas-header bg-success text-white">
+            <h5 class="offcanvas-title" id="keranjangOffcanvasLabel">🛒 Keranjang Belanja Anda</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <h6 class="fw-bold mb-3 text-success">Produk Saat Ini (1 Item)</h6>
+
+            <div class="d-flex align-items-center mb-3 p-2 border rounded">
+                <img src="assets/img/tehJahe.jpg" alt="Teh Jahe" class="rounded me-3"
+                    style="width: 50px; height: 50px; object-fit: cover;">
+                <div class="flex-grow-1">
+                    <h6 class="mb-0 fw-bold small">Teh Jahe Hangat & Rempah</h6>
+                    <p class="mb-0 small text-muted">3x @ Rp 29.000</p>
+                </div>
+                <button class="btn btn-sm btn-outline-danger ms-auto" type="button" aria-label="Hapus">
+                    <i class="fas fa-trash-alt small"></i>
+                </button>
+            </div>
+            <div class="mt-auto pt-3 border-top">
+                <h5 class="fw-bold text-dark">Subtotal: Rp 87.000</h5>
+                <a href="produk.html" class="btn btn-success w-100 mt-2">Lanjutkan Belanja</a>
+                <a href="terimakasih.html" class="btn btn-warning w-100 mt-2">Bayar Sekarang</a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

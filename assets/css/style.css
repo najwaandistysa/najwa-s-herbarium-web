@@ -1,0 +1,355 @@
+:root {
+    --primary-color: #1D6460;
+    /* Deep Teal / Latar Belakang Gelap Footer */
+    --secondary-color: #1F7A8C;
+    /* Dark Cyan / Warna Aksen (Tombol, Brand Navbar) */
+    --light-bg: #EEF7F7;
+    /* Very Pale Cyan / Latar Belakang Body Terang */
+    --footer-heading-color: #FFFFFF;
+    /* Putih untuk judul footer */
+    --footer-text-light: #E0FFFF;
+    /* Light Cyan untuk teks footer yang terang */
+    --warning-color: #FFD700;
+    /* Emas untuk promo */
+    --danger-color: #DC3545;
+    /* Merah untuk diskon/best seller */
+}
+
+/* Mengubah warna teks dan tombol Bootstrap default */
+.text-success {
+    color: var(--secondary-color) !important;
+}
+
+.bg-success {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-success {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+.btn-success:hover {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-success {
+    color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    border-radius: 25px;
+    /* Untuk tombol di navbar */
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+.navbar {
+    background-color: var(--light-bg) !important;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Styling Khusus untuk Logo dan Teks Dua Baris di Navbar */
+
+.brand-logo-img {
+    /* Atur tinggi logo */
+    height: 40px;
+    width: auto;
+    /* Margin kanan sudah diatur di HTML (me-2) */
+}
+
+.brand-text {
+    /* Memastikan teks 'Herbarium' tidak terpotong */
+    line-height: 1;
+}
+
+/* Mengatur gaya teks brand sesuai permintaan (teks 'Najwa's' lebih tebal, 'Herbarium' lebih kecil/normal) */
+.brand-text span:first-child {
+    /* Najwa's */
+    font-size: 1.2rem !important;
+    /* Ukuran yang sedikit lebih besar */
+    font-weight: 700 !important;
+}
+
+.brand-text span:last-child {
+    /* Herbarium */
+    font-size: 0.9rem !important;
+    /* Ukuran lebih kecil */
+    font-weight: 400 !important;
+    color: var(--primary-color) !important;
+    /* Agar warnanya lebih gelap, jangan gunakan text-success di bagian ini */
+}
+
+/* Override default navbar-brand styling jika diperlukan */
+.navbar-brand {
+    /* Menghapus font-size dan color default dari CSS Anda agar tidak bentrok dengan span di dalamnya */
+    font-size: 1rem !important;
+    color: inherit !important;
+}
+
+
+/* Styling untuk item Nav */
+.navbar-nav .nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Garis bawah penanda */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* Mulai dari kiri */
+    width: 0;
+    /* Awalnya tidak ada lebar */
+    height: 3px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 0%;
+    /* Memastikan lebar tetap nol saat di-hover */
+}
+
+/* 2. EFEK AKTIF (Garis Muncul Permanen) */
+.navbar-nav .nav-link.active {
+    font-weight: 700;
+    color: var(--secondary-color) !important;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+    /* Garis muncul penuh saat aktif */
+}
+
+.navbar-nav .nav-link.active:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 95vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(rgba(29, 100, 96, 0.4), rgba(29, 100, 96, 0.6)), url('../img/hero.jpg');
+    color: white !important;
+}
+
+.hero-section h1,
+.hero-section p.lead {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Animasi Pulse */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(31, 122, 140, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(31, 122, 140, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(31, 122, 140, 0);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+    transform: translateY(0px) !important;
+    /* Nonaktifkan efek naik saat debugging */
+    box-shadow: 0 0.5rem 1.5rem rgba(31, 122, 140, 0.2) !important;
+}
+
+.product-card {
+    position: relative;
+
+    padding-top: 0px !important;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.product-card .card-body {
+    padding-top: 1rem;
+}
+
+.product-card .badge {
+
+    position: absolute;
+    top: 10px;
+    /* Jarak dari atas card */
+    right: 10px;
+    /* Jarak dari kanan card */
+    left: auto !important;
+    /* Nonaktifkan properti 'left: 50%' sebelumnya */
+    transform: none !important;
+    /* Nonaktifkan transformasi (translate) sebelumnya */
+    z-index: 100;
+    /* Pastikan di atas gambar/video */
+    /* Gaya badge tetap sama */
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    border-radius: 0.375rem;
+    /* Tambahkan border-radius agar badge rapi di sudut */
+}
+/* CSS KUSTOM UNTUK HARGA (Meniru warna Teal/Hijau kebiruan yang kuat) */
+.text-teal-custom {
+    color: #008080 !important;
+    /* Contoh warna teal yang lebih kuat */
+}
+
+/* Gaya tambahan untuk gambar produk */
+.product-img {
+    max-height: 200px;
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Penting: Set tinggi minimum pada deskripsi untuk keseragaman */
+.product-description {
+    min-height: 40px;
+    overflow: hidden;
+}
+
+/* Penting: Set tinggi minimum pada area harga */
+.price-area {
+    min-height: 50px;
+}
+
+/* Pastikan card-body menggunakan flex untuk menyelaraskan konten ke bawah */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menghapus gaya price-placeholder karena sekarang semua harus terlihat */
+.price-muted {
+    color: #6c757d !important;
+    /* Warna abu-abu normal */
+    text-decoration: line-through;
+    margin-bottom: 0 !important;
+}
+
+.carousel-item {
+    overflow: visible !important;
+}
+
+/* Styling Ikon Panah Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* Meningkatkan ukuran ikon */
+    width: 2rem;
+    height: 2rem;
+    /* Mengubah warna latar belakang ke warna aksen */
+    background-color: var(--secondary-color) !important;
+    border-radius: 50%;
+}
+
+/* Mengurangi Opacity saat tidak di-hover (opsional) */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    /* Penuh saat di-hover */
+}
+
+/* Penyesuaian Tombol Navigasi Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    /* Mengurangi lebar agar panah tidak menutupi produk terlalu banyak */
+    width: 5% !important;
+    opacity: 0.8;
+}
+
+/* --- CSS UNTUK EFEK HOVER DI PRODUK TERLARIS --- */
+
+.product-image-wrapper {
+    position: relative;
+    width: 100%;
+    /* Nilai ini penting: memberi ruang vertikal yang cukup untuk gambar 1:1 */
+    padding-top: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    /* Gunakan margin-bottom ini agar ada jarak antara gambar dan judul produk */
+    margin-bottom: 1rem !important;
+    z-index: 1;
+}
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    border-radius: 0.375rem;
+}
+
+.thank-you-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--primary-color) !important;
+    color: var(--footer-text-light);
+}
+
+footer h6 {
+    color: var(--footer-heading-color) !important;
+    /* Judul footer jadi putih */
+}
+
+footer a {
+    color: var(--footer-text-light) !important;
+}
+
+footer a:hover {
+    color: var(--footer-heading-color) !important;
+}
+
+/* Blog Card Image */
+.blog-card-img {
+    height: 200px;
+    object-fit: cover;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Najwa's Herbarium</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logoApotek.png" alt="Logo Najwa's Herbarium" class="brand-logo-img me-2">
+
+                <span class="brand-text text-success fw-bold d-flex flex-column lh-1">
+                    <span class="fs-6">Najwa's</span>
+                    <span class="fs-6 fw-normal" style="margin-top: -3px;">Herbarium</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="produk.html">Produk & Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link " href="tentang.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link " href="blog.html">Blog/Edukasi</a></li>
+                    <li class="nav-item"><a class="nav-link " href="kontak.html">Kontak</a></li>
+                </ul>
+                <button class="btn btn-outline-success ms-lg-3 me-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i> <span class="d-none d-md-inline">Cari</span>
+                </button>
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#keranjangOffcanvas" aria-controls="keranjangOffcanvas">
+                    🛒 Keranjang
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="fw-bold mb-4 text-success">Proses Pembayaran (Checkout)</h2>
+
+        <div class="row g-5">
+
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3 text-success"><i class="fas fa-truck me-2"></i> Alamat Pengiriman</h4>
+
+                <form action="konfirmasi.html" method="GET">
+                    <div class="row g-3">
+
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nama Depan</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Nama Belakang</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="anda@contoh.com" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Alamat Lengkap</label>
+                            <input type="text" class="form-control" id="address"
+                                placeholder="Nama jalan, nomor rumah, RT/RW" required>
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Provinsi</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Pilih...</option>
+                                <option>DKI Jakarta</option>
+                                <option>Jawa Barat</option>
+                                <option>Jawa Tengah</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Kota</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Pilih...</option>
+                                <option>Bandung</option>
+                                <option>Jakarta Pusat</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Kode Pos</label>
+                            <input type="text" class="form-control" id="zip" placeholder="12345" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3 text-success"><i class="fas fa-credit-card me-2"></i> Pembayaran</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                required>
+                            <label class="form-check-label" for="credit">Transfer Bank (BCA/Mandiri)</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">E-Wallet (Dana/Gopay)</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">Bayar di Tempat (COD)</label>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-success btn-lg mb-5" type="submit">
+                        Lanjut ke Konfirmasi Pembayaran
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <div class="p-4 rounded-3 border bg-light">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3 text-success">
+                        <span class="text-success fw-bold"><i class="fas fa-receipt me-2"></i> Ringkasan Order</span>
+                        <span class="badge bg-success rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Kapsul Daun Kelor (Moringa)</h6>
+                                <small class="text-muted">1 pcs x Rp 55.000</small>
+                            </div>
+                            <span class="text-muted">Rp 55.000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Teh Relaksasi Lavender</h6>
+                                <small class="text-muted">1 pcs x Rp 65.000</small>
+                            </div>
+                            <span class="text-muted">Rp 65.000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Minyak Esensial Peppermint</h6>
+                                <small class="text-muted">1 pcs x Rp 85.000</small>
+                            </div>
+                            <span class="text-muted">Rp 85.000</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Biaya Pengiriman (JNE Reg)</span>
+                            <strong class="text-success">Rp 15.000</strong>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-white fw-bold fs-5">
+                            <span>Total Pembayaran</span>
+                            <strong class="text-success">Rp 220.000</strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2 bg-white border-success">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Kode Promo">
+                            <button type="submit" class="btn btn-outline-success">Gunakan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Apotek Najwa</h6>
+                    <p class="small">Dedikasi kami untuk kesehatan alami dan warisan botani Indonesia.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Layanan Cepat</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none">Beranda</a></li>
+                        <li><a href="produk.html" class="text-decoration-none">Katalog Produk</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Hubungi Kami</h6>
+                    <p class="small">
+                        Email: info@najwasherbarium.com<br>
+                        Telepon: (021) 876-APOTK
+                    </p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Disclaimer</h6>
+                    <p class="small">Produk herbal adalah suplemen. Hasil dapat bervariasi.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto" style="width: 90%;" />
+        <div class="text-center p-3 small">
+            © 2025 Najwa's Herbarium.
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

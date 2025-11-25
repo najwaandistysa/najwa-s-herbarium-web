@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Najwa's Herbarium - Kesehatan Herbal & Promo</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logoApotek.png" alt="Logo Najwa's Herbarium" class="brand-logo-img me-2">
+
+                <span class="brand-text text-success fw-bold d-flex flex-column lh-1">
+                    <span class="fs-6">Najwa's</span>
+                    <span class="fs-6 fw-normal" style="margin-top: -3px;">Herbarium</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link " href="produk.html">Produk & Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link " href="tentang.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link " href="blog.html">Blog/Edukasi</a></li>
+                    <li class="nav-item"><a class="nav-link " href="kontak.html">Kontak</a></li>
+                </ul>
+                <button class="btn btn-outline-success ms-lg-3 me-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i> <span class="d-none d-md-inline">Cari</span>
+                </button>
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#keranjangOffcanvas" aria-controls="keranjangOffcanvas">
+                    🛒 Keranjang
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-section text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-3 fw-bolder">Kesehatan Alami, Hidup Sehat</h1>
+            <p class="lead mb-4">Temukan Keseimbangan Alam dalam Setiap Tetes dan Kapsul.</p>
+            <a href="produk.html" class="btn btn-warning btn-lg shadow-lg text-dark fw-bold pulse-animation">BELI
+                SEKARANG & DAPATKAN DISKON!</a>
+        </div>
+    </header>
+
+    <section class="py-4 bg-success text-white">
+        <div class="container text-center">
+            <h2 class="mb-2 display-6 fw-bold">PROMO EKSTRA 20% OFF</h2>
+            <p class="lead mb-0">Untuk semua Produk Peningkat Imunitas. Gunakan kode: SEHAT ALAMI</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success fw-bold">🔥 Produk Terlaris Bulan Ini 🔥</h2>
+
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div
+                                    class="card h-100 text-center shadow-lg border-warning position-relative product-card">
+                                    <span class="badge bg-danger position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">BEST SELLER</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/kapsulDK.jpg" alt="Kapsul Daun Kelor"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Kapsul Daun Kelor (Vitalitas)</h5>
+                                        <p class="card-text small mb-2">Meningkatkan vitalitas dan daya tahan tubuh.
+                                            Formula 100% alami.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 95.000</p>
+                                        <p class="fw-bold fs-4 text-danger">Rp 85.000</p>
+                                        <a href="detail-kapsulDK.html" class="btn btn-success w-100">Lihat Detail &
+                                            Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-warning text-dark position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">DISKON 10%</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/tehLavender.jpg" alt="Teh Relaksasi Lavender"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Teh Relaksasi Lavender</h5>
+                                        <p class="card-text small mb-2">Ramuan untuk membantu tidur nyenyak dan
+                                            mengurangi stres.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0">Rp 60.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 54.000</p>
+                                        <a href="detail-teh-relaksasi-lavender.html" class="btn btn-success w-100">Lihat
+                                            Detail & Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-success position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">NEW ARRIVAL</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/minyakEPepp.jpg" alt="Minyak Esensial Peppermint"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Minyak Esensial Peppermint</h5>
+                                        <p class="card-text small mb-2">Murni, membantu meredakan sakit kepala dan
+                                            menyegarkan udara.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 85.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 75.000</p>
+                                        <a href="detail-minyak-esensial-peppermint.html"
+                                            class="btn btn-success w-100">Lihat Detail & Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-success position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">POPULER</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/kunyitPutih.jpg" alt="Kunyit Putih"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Kapsul Kunyit Putih (Imun)</h5>
+                                        <p class="card-text small mb-2">Meningkatkan sistem imun dan melawan radikal
+                                            bebas.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 70.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 65.000</p>
+                                        <a href="detail-kapsul-kunyitP.html" class="btn btn-success w-100">Lihat Detail
+                                            & Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-danger position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">RAW HONEY</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/maduMurniH.jpg" alt="Madu Murni Hutan"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Madu Murni Hutan</h5>
+                                        <p class="card-text small mb-2">100% Madu mentah dari hutan tropis Indonesia.
+                                        </p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 150.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 120.000</p>
+                                        <a href="detail-madu-murniH.html" class="btn btn-success w-100">Lihat Detail &
+                                            Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-warning text-dark position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">DISKON</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/essenteialOilL.jpg" alt="EO Lemon"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Essential Oil Lemon</h5>
+                                        <p class="card-text small mb-2">Menyegarkan ruangan dan meningkatkan fokus.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 65.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 59.000</p>
+                                        <a href="detail-essential-oil.html" class="btn btn-success w-100">Lihat Detail &
+                                            Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-danger position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">HANGAT</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/tehJM.jpg" alt="Teh Jahe Merah"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Teh Jahe Merah</h5>
+                                        <p class="card-text small mb-2">Menghangatkan tubuh dan meredakan masuk angin.
+                                        </p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 45.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 40.000</p>
+                                        <a href="detail-teh-jahe-merah.html" class="btn btn-success w-100">Lihat Detail
+                                            & Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-success position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">SUPERFOOD</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/spirulina.jpg" alt="Serbuk Spirulina"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Serbuk Spirulina</h5>
+                                        <p class="card-text small mb-2">Sumber protein dan nutrisi lengkap.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 110.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 99.000</p>
+                                        <a href="detail-serbuk-spirulina.html" class="btn btn-success w-100">Lihat
+                                            Detail & Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-success position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">KLASIK</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/kayuP.jpg" alt="Minyak Kayu Putih"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Minyak Kayu Putih</h5>
+                                        <p class="card-text small mb-2">Meredakan perut kembung dan gatal-gatal.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 35.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 30.000</p>
+                                        <a href="detail-mk-putih.html" class="btn btn-success w-100">Lihat Detail &
+                                            Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-danger position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">JANTUNG</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/kapsulBP.jpg" alt="Kapsul Bawang Putih"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Kapsul Bawang Putih</h5>
+                                        <p class="card-text small mb-2">Membantu menurunkan tekanan darah dan
+                                            kolesterol.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 80.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 72.000</p>
+                                        <a href="detail-kapsul-bwp.html" class="btn btn-success w-100">Lihat Detail &
+                                            Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-success position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">DIET</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/tehHijauOrganik.jpg" alt="Teh Hijau Organik"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Teh Hijau Organik</h5>
+                                        <p class="card-text small mb-2">Membantu metabolisme dan kaya antioksidan.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 55.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 50.000</p>
+                                        <a href="detail-teh-hijau.html" class="btn btn-success w-100">Lihat Detail &
+                                            Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 text-center shadow-sm position-relative product-card">
+                                    <span class="badge bg-warning text-dark position-absolute"
+                                        style="top: 10px; right: 10px; z-index: 100;">PREMIUM</span>
+                                    <div class="card-body pt-4">
+                                        <div class="product-image-wrapper mb-3">
+                                            <img src="assets/img/minyakZaitun.jpg" alt="Minyak Zaitun Murni"
+                                                class="img-fluid rounded-3 product-image">
+                                        </div>
+                                        <h5 class="card-title text-success mt-3">Minyak Zaitun Murni</h5>
+                                        <p class="card-text small mb-2">Extra Virgin Olive Oil untuk kesehatan
+                                            menyeluruh.</p>
+                                        <p class="text-muted text-decoration-line-through mb-0 small">Rp 130.000</p>
+                                        <p class="fw-bold fs-4 text-success">Rp 115.000</p>
+                                        <a href="detail-minyak-zaitun.html" class="btn btn-success w-100">Lihat Detail &
+                                            Beli</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            <div class="text-center mt-4">
+                <a href="produk.html" class="btn btn-outline-success btn-lg">Jelajahi Semua 50+ Produk Herbal</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success fw-bold">Mengapa Memilih Najwa's Herbarium?</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-certificate fa-3x text-success mb-3"></i>
+                        <h4 class="fw-bold text-success">BPOM Certified</h4>
+                        <p class="text-muted">Semua produk terdaftar dan diuji kualitasnya oleh badan resmi.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-leaf fa-3x text-success mb-3"></i>
+                        <h4 class="fw-bold text-success">100% Alami Murni</h4>
+                        <p class="text-muted">Tanpa bahan kimia berbahaya, pewarna, atau pengawet buatan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fas fa-user-md fa-3x text-success mb-3"></i>
+                        <h4 class="fw-bold text-success">Konsultasi Apoteker</h4>
+                        <p class="text-muted">Layanan konsultasi gratis untuk rekomendasi kesehatan personal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success fw-bold">Telusuri Kategori Kami</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <a href="produk.html#kapsul" class="text-decoration-none position-relative">
+                        <div class="card text-center bg-success text-white h-100 shadow-lg">
+                            <span
+                                class="badge bg-warning text-dark position-absolute top-0 end-0 rounded-pill px-3 py-2 translate-middle mt-1 me-1">POPULER</span>
+                            <div class="card-body p-4">
+                                <i class="fas fa-pills fa-2x mb-2 text-warning"></i>
+                                <h5 class="card-title fw-bold">Kapsul & Tablet</h5>
+                                <p class="card-text small">Suplemen harian dan multivitamin.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="produk.html#teh" class="text-decoration-none position-relative">
+                        <div class="card text-center bg-white h-100 shadow-lg">
+                            <span
+                                class="badge bg-danger text-white position-absolute top-0 end-0 rounded-pill px-3 py-2 translate-middle mt-1 me-1">HOT
+                                SALE</span>
+                            <div class="card-body p-4">
+                                <i class="fas fa-coffee fa-2x mb-2 text-success"></i>
+                                <h5 class="card-title fw-bold text-success">Teh Kesehatan</h5>
+                                <p class="card-text small text-muted">Detox, relaksasi, dan kebugaran.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="produk.html#topikal" class="text-decoration-none">
+                        <div class="card text-center bg-success text-white h-100 shadow-lg">
+                            <div class="card-body p-4">
+                                <i class="fas fa-spa fa-2x mb-2 text-warning"></i>
+                                <h5 class="card-title fw-bold">Perawatan Kulit</h5>
+                                <p class="card-text small">Minyak esensial dan balm topikal.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="kontak.html" class="text-decoration-none">
+                        <div class="card text-center bg-white h-100 shadow-lg">
+                            <div class="card-body p-4">
+                                <i class="fas fa-hands-helping fa-2x mb-2 text-success"></i>
+                                <h5 class="card-title fw-bold text-success">Layanan Konsultasi</h5>
+                                <p class="card-text small text-muted">Dapatkan saran ahli untuk kebutuhan spesifik.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Apa Kata Pelanggan Kami?</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <i class="fas fa-quote-left fa-3x mb-3 text-warning"></i>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-4 fst-italic">"Produk Kelornya luar biasa! Saya jadi lebih bertenaga dan jarang
+                                flu. Kualitasnya sangat premium, melebihi ekspektasi saya."</p>
+                            <footer class="blockquote-footer text-light">- <cite title="Source Title">Siti,
+                                    Jakarta</cite></footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <i class="fas fa-quote-left fa-3x mb-3 text-warning"></i>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-4 fst-italic">"Pelayanan konsultasinya sangat membantu. Akhirnya saya tahu
+                                kombinasi herbal yang tepat untuk mengatasi masalah tidur saya. Terima kasih, Najwa's
+                                Herbarium!"</p>
+                            <footer class="blockquote-footer text-light">- <cite title="Source Title">Ahmad,
+                                    Bandung</cite></footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <i class="fas fa-quote-left fa-3x mb-3 text-warning"></i>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-4 fst-italic">"Teh detoksnya enak dan segar! Pengiriman selalu cepat dan
+                                packingnya rapi. Sangat merekomendasikan apotek ini untuk kebutuhan herbal sehari-hari."
+                            </p>
+                            <footer class="blockquote-footer text-light">- <cite title="Source Title">Maria,
+                                    Surabaya</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-success fw-bold">📰 Baca Jurnal Kesehatan Terbaru Kami</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/kunyit.jpg" class="card-img-top blog-card-img" alt="Ilustrasi Kunyit">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">9 Manfaat Kunyit untuk Kesehatan Tubuh</h5>
+                            <p class="card-text small text-muted">Pelajari bagaimana rempah dapur ini dapat menjadi obat
+                                alami terbaik Anda.</p>
+                            <a href="https://www.alodokter.com/kebenaran-manfaat-kunyit-ditinjau-dari-segi-medis"
+                                class="btn btn-sm btn-outline-success">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/adaptogen.jpg" class="card-img-top blog-card-img"
+                            alt="Ilustrasi Adaptogen">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Mengenal Khasiat Adaptogen, Zat Penangkal Stres di Dalam
+                                Tanaman Herbal</h5>
+                            <p class="card-text small text-muted">Kenali Ashwagandha, Ginseng, dan herbal lainnya untuk
+                                lawan stres.</p>
+                            <a href="https://hellosehat.com/herbal-alternatif/herbal/apa-itu-adaptogen/"
+                                class="btn btn-sm btn-outline-success">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/essentialOil.jpg" class="card-img-top blog-card-img"
+                            alt="Ilustrasi Essential Oil">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Essential Oils: Tren Aromaterapi dan Manfaatnya untuk
+                                Kesehatan
+                            </h5>
+                            <p class="card-text small text-muted">Cara aman menggunakan minyak esensial Peppermint dan
+                                Eucalyptus.</p>
+                            <a href="https://kumparan.com/yuliuschristian/essential-oils-tren-aromaterapi-dan-manfaatnya-untuk-kesehatan-24CjwfJdCbT"
+                                class="btn btn-sm btn-outline-success">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="blog.html" class="btn btn-success btn-lg">Lihat Semua Artikel Edukasi</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-warning">
+        <div class="container text-center">
+            <h2 class="mb-3 display-6 fw-bold text-dark">Siap Memulai Perjalanan Kesehatan Alami Anda?</h2>
+            <p class="lead mb-4 text-dark">Dapatkan saran personal dan temukan produk yang tepat untuk Anda.</p>
+            <a href="kontak.html" class="btn btn-success btn-lg fw-bold shadow-lg me-3">Konsultasi Gratis</a>
+            <a href="produk.html" class="btn btn-dark btn-lg fw-bold shadow-lg">Lihat Katalog</a>
+        </div>
+    </section>
+
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Apotek Najwa</h6>
+                    <p class="small">Dedikasi kami untuk kesehatan alami dan warisan botani Indonesia. Kami percaya pada
+                        kekuatan penyembuhan alam.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Layanan Cepat</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none">Beranda</a></li>
+                        <li><a href="produk.html" class="text-decoration-none">Katalog Produk</a></li>
+                        <li><a href="#" class="text-decoration-none">Keranjang</a></li>
+                        <li><a href="tentang.html" class="text-decoration-none">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Hubungi Kami</h6>
+                    <p class="small">
+                        Email: info@najwasherbarium.com<br>
+                        Telepon: (021) 876-APOTK
+                    </p>
+                    <div class="d-flex social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Disclaimer</h6>
+                    <p class="small">Produk herbal adalah suplemen. Konsultasikan dengan profesional kesehatan sebelum
+                        mengganti resep medis. Hasil dapat bervariasi.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto" style="width: 90%;" />
+        <div class="text-center p-3 small">
+            © 2025 Najwa's Herbarium. Dibuat dengan semangat botani.
+        </div>
+    </footer>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-body p-5">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <h3 class="text-success fw-bold text-center mb-4">Cari Obat & Herbal Anda</h3>
+
+                    <form action="produk.html" method="GET">
+                        <div class="input-group input-group-lg border rounded-pill shadow-sm p-1"
+                            style="border-color: #1F7A8C !important;">
+                            <span class="input-group-text bg-white border-0 rounded-start-pill" id="search-addon"><i
+                                    class="fas fa-search text-success fa-lg"></i></span>
+                            <input type="search" class="form-control border-0"
+                                placeholder="Contoh: Kapsul Daun Kelor atau ketik gejala Anda..." aria-label="Search"
+                                name="q" aria-describedby="search-addon">
+                            <button class="btn btn-success rounded-pill px-4 ms-2" type="submit">Cari</button>
+                        </div>
+                    </form>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6 offset-md-3">
+                            <div class="p-3 text-center bg-light rounded-3 border">
+                                <i class="fas fa-magic text-success fa-2x mb-2"></i>
+                                <p class="mb-0 fw-bold text-success">Lupa nama obatnya apa? Coba ketik gejala kamu, kami
+                                    bantu carikan!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="keranjangOffcanvas"
+        aria-labelledby="keranjangOffcanvasLabel">
+        <div class="offcanvas-header bg-success text-white">
+            <h5 class="offcanvas-title" id="keranjangOffcanvasLabel">🛒 Keranjang Belanja Anda</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <h6 class="fw-bold mb-3 text-success">Produk Saat Ini (0 Item)</h6>
+            <a href="produk.html" class="btn btn-success w-100 mt-2">Lanjutkan Belanja</a>
+            <a href="terimakasih.html" class="btn btn-warning w-100 mt-2">Bayar Sekarang</a>
+        </div>
+    </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

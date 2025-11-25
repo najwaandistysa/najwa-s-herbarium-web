@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pembayaran | Najwa's Herbarium</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/logoApotek.png" alt="Logo Najwa's Herbarium" class="brand-logo-img me-2">
+
+                <span class="brand-text text-success fw-bold d-flex flex-column lh-1">
+                    <span class="fs-6">Najwa's</span>
+                    <span class="fs-6 fw-normal" style="margin-top: -3px;">Herbarium</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link " href="produk.html">Produk & Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link " href="tentang.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link " href="blog.html">Blog/Edukasi</a></li>
+                    <li class="nav-item"><a class="nav-link " href="kontak.html">Kontak</a></li>
+                </ul>
+                <button class="btn btn-outline-success ms-lg-3 me-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i> <span class="d-none d-md-inline">Cari</span>
+                </button>
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#keranjangOffcanvas" aria-controls="keranjangOffcanvas">
+                    🛒 Keranjang
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="card shadow-lg p-md-5 p-3 text-center border-success border-3">
+                    <div class="card-body">
+                        <i class="fas fa-check-circle txt-success fa-5x mb-4"></i>
+                        <h1 class="card-title fw-bold txt-success mb-3">Pesanan Berhasil Dibuat!</h1>
+                        <p class="lead">Terima kasih atas pembelian Anda. Pesanan Anda **#NJW120102** sedang menunggu
+                            pembayaran.</p>
+
+                        <hr class="my-4">
+
+                        <h4 class="text-start txt-success text-dark fw-bold mb-3"><i
+                                class="fas fa-money-check-alt me-2"></i> Detail Pembayaran</h4>
+
+                        <div class="alert alert-warning text-dark p-4 border border-warning" role="alert">
+                            <p class="mb-1">Mohon transfer sejumlah:</p>
+                            <h2 class="fw-bolder display-4 mb-3 text-danger">Rp 220.000</h2>
+
+                            <p class="mb-1 fw-bold">Transfer ke Rekening Bank:</p>
+                            <div class="text-start bg-white p-3 rounded shadow-sm">
+                                <p class="mb-0 small text-muted">Nama Bank:</p>
+                                <p class="fs-5 fw-bold txt-success">BANK MANDIRI (Atas Nama Najwa Herbal PT)</p>
+                                <p class="mb-0 small text-muted">Nomor Rekening:</p>
+                                <p class="fs-4 fw-bold text-dark">123-00-9876543-1</p>
+                            </div>
+
+                            <p class="mt-3 small text-muted">Batas Pembayaran: 2 jam setelah pesanan dibuat (Sebelum
+                                10:20 WIB, 22 Nov 2025).</p>
+                        </div>
+
+                        <h4 class="text-start txt-success fw-bold mt-4 mb-3"><i class="fas fa-box-open me-2"></i>
+                            Rincian Pesanan</h4>
+                        <ul class="list-group mb-4 text-start">
+                            <li class="list-group-item d-flex justify-content-between">
+                                Kapsul Daun Kelor (1x)
+                                <span>Rp 55.000</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                Teh Relaksasi Lavender (1x)
+                                <span>Rp 65.000</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                Minyak Esensial Peppermint (1x)
+                                <span>Rp 85.000</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between txt-success fw-bold">
+                                Biaya Pengiriman
+                                <span>Rp 15.000</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between fw-bold bg-light">
+                                Total Akhir
+                                <span>Rp 220.000</span>
+                            </li>
+                        </ul>
+
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-success btn-lg"><i class="fab fa-whatsapp me-2"></i> Konfirmasi
+                                Pembayaran</a>
+                            <a href="produk.html" class="btn btn-outline-success">Lanjutkan Belanja</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center mt-4 small text-muted">Cek email Anda untuk salinan rincian pesanan dan petunjuk
+                    transfer.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Apotek Najwa</h6>
+                    <p class="small">Dedikasi kami untuk kesehatan alami dan warisan botani Indonesia.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Layanan Cepat</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-decoration-none">Beranda</a></li>
+                        <li><a href="produk.html" class="text-decoration-none">Katalog Produk</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Hubungi Kami</h6>
+                    <p class="small">
+                        Email: info@najwasherbarium.com<br>
+                        Telepon: (021) 876-APOTK
+                    </p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase fw-bold">Disclaimer</h6>
+                    <p class="small">Produk herbal adalah suplemen. Hasil dapat bervariasi.</p>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto" style="width: 90%;" />
+        <div class="text-center p-3 small">
+            © 2025 Najwa's Herbarium.
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
