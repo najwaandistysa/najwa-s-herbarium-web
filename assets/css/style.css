@@ -221,6 +221,7 @@ body {
     border-radius: 0.375rem;
     /* Tambahkan border-radius agar badge rapi di sudut */
 }
+
 /* CSS KUSTOM UNTUK HARGA (Meniru warna Teal/Hijau kebiruan yang kuat) */
 .text-teal-custom {
     color: #008080 !important;
@@ -328,6 +329,53 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* CSS untuk Ikon Centang Besar di Halaman Terima Kasih */
+.check-icon-large {
+    /* Ukuran Wadah */
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    /* Vertikal centering */
+
+    /* Gaya Bentuk */
+    border: 5px solid var(--secondary-color);
+    /* Warna border sesuai tema */
+    border-radius: 50%;
+    /* Membuatnya lingkaran */
+
+    /* Ikon di dalamnya */
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Wajib ditambahkan ke style.css agar ikon centang tidak miring --- */
+.custom-check-icon {
+    /* Ukuran Wadah (Lingkaran) */
+    width: 80px;
+    height: 80px;
+
+    /* Bentuk dan Border */
+    border: 5px solid var(--secondary-color);
+    /* Menggunakan variabel warna tema Anda */
+    border-radius: 50%;
+    /* Bentuk lingkaran */
+
+    /* Penempatan Ikon Centang */
+    display: flex;
+    align-items: center;
+    /* Centering Vertikal */
+    justify-content: center;
+    /* Centering Horizontal */
+
+    /* Ukuran Ikon di dalamnya */
+    font-size: 40px;
+
+    /* Pastikan warna ikon sesuai tema */
+    color: var(--secondary-color);
 }
 
 footer {
