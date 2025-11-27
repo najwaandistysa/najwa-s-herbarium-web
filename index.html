@@ -640,10 +640,17 @@
         </div>
         <div class="offcanvas-body d-flex flex-column">
             <h6 class="fw-bold mb-3 text-success">Produk Saat Ini (0 Item)</h6>
-            <a href="produk.html" class="btn btn-success w-100 mt-2">Lanjutkan Belanja</a>
-            <a href="terimakasih.html" class="btn btn-warning w-100 mt-2">Bayar Sekarang</a>
+            <div class="text-center p-4 border rounded mb-3">
+                <i class="fas fa-shopping-basket fa-2x text-muted mb-2"></i>
+                <p class="text-muted small mb-0">Keranjang Anda kosong. Yuk, temukan herbal terbaik!</p>
+            </div>
+
+            <div class="mt-auto pt-3 border-top">
+                <h5 class="fw-bold text-dark">Subtotal: Rp 0</h5>
+                <a href="produk.html" class="btn btn-success w-100 mt-2">Lanjutkan Belanja</a>
+                <button class="btn btn-outline-success w-100 mt-2 disabled" disabled>Bayar Sekarang</button>
+            </div>
         </div>
-    </div>
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
